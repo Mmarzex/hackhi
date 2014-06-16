@@ -3,7 +3,11 @@
 
 $font-stack: 'Source Sans Pro', sans-serif;
 $humana-green: #5c9a1b;
+$humana-darkgreen: #1d5b2d;
 $humana-pink: #aa005f;
+$humana-grey: #676767;
+$humana-darkgrey: #484641;
+$humana-lightgrey: #eeeeee;
 
 @mixin box-shadow($type, $firstvar, $secondvar, $thirdvar, $width, $color)
 {
@@ -200,11 +204,58 @@ h2.special {
 }
 
 .section.background.one {
-	background-image: url('../images/background1.jpg');
+	// background-image: url('../images/background1.jpg');
+	background-color: $humana-green;
 	.column {
 	    p {
 	    	text-align: center;
 	    }
+	}
+	padding-bottom: 0;
+}
+
+.section.speakers {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 30rem;
+	position: relative;
+	.speakercard {
+		position: absolute;
+		top: 0; right: -5.5rem; bottom: 0; left: 5.5rem;
+		padding: 0;
+		@include transform(skew(-20deg));
+		background-color: white;
+		.sliver {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 7rem;
+			color: black;
+			background-color: $humana-grey;
+			text-align: left;
+			.inner {
+				@include transform(skew(20deg) rotate(-70deg));
+				height: 7rem;
+				width: 30rem;
+				margin-top: 12rem;
+				margin-left: -11.25rem;
+				padding-right: 2rem;
+				text-align: right;
+				img.fit {
+					display: inline-block;
+					vertical-align: middle;
+					height: 5rem;
+				}
+				h2 {
+					display: inline-block;
+					width: 20rem;
+					@extend h2.special;
+				}
+			}
+		}
 	}
 }
 
