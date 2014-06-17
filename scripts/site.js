@@ -51,7 +51,7 @@ $(document).ready(function() {
 		$('p.contributors').slideToggle(500);
 	});
 
-    $('.section.header a').click(function () {
+    $('.section.header a, #Home a').click(function () {
         var href = $(this).attr('href').toString();
         var top = $(href).offset();
         $('html, body').animate({
