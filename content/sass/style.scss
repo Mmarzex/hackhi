@@ -205,7 +205,7 @@ h2.special {
 
 .section.background.one {
 	// background-image: url('../images/background1.jpg');
-	background-color: $humana-green;
+	background-color: $humana-pink;
 	.column {
 	    p {
 	    	text-align: center;
@@ -223,10 +223,12 @@ h2.special {
 	position: relative;
 	.speakercard {
 		position: absolute;
-		top: 0; right: -5.5rem; bottom: 0; left: 5.5rem;
+		top: 0; right: -5.5rem; bottom: 0; left: 0;
 		padding: 0;
 		@include transform(skew(-20deg));
+		@include transition(left 0.5s ease-out);
 		background-color: white;
+		box-shadow: rgba(0,0,0,0.85) -0.125rem 0 0.375rem;
 		.sliver {
 			position: absolute;
 			top: 0;
@@ -234,8 +236,15 @@ h2.special {
 			bottom: 0;
 			width: 7rem;
 			color: black;
-			background-color: $humana-grey;
 			text-align: left;
+			cursor: pointer;
+			overflow: hidden;
+			img.fit {
+				width: 9rem;
+				@include transform(skew(20deg));
+				display: inline-block;
+				margin-left: -1rem;
+			}
 			.inner {
 				@include transform(skew(20deg) rotate(-70deg));
 				height: 7rem;
@@ -244,11 +253,6 @@ h2.special {
 				margin-left: -11.25rem;
 				padding-right: 2rem;
 				text-align: right;
-				img.fit {
-					display: inline-block;
-					vertical-align: middle;
-					height: 5rem;
-				}
 				h2 {
 					display: inline-block;
 					width: 20rem;
@@ -256,12 +260,75 @@ h2.special {
 				}
 			}
 		}
+		.body {
+			position: absolute;
+			top: 5rem;
+			left: 10rem;
+			bottom: 5rem;
+			width: 37.5rem;
+			color: black;
+			p {
+				text-align: justify;
+			}
+		}
+	}
+	#card1 {
+		left: 5.5rem;
+		.sliver {
+			background-color: $humana-grey;
+		}
+	}
+	#card2 {
+		left: 57.5rem;
+		.sliver {
+			background-color: $humana-darkgreen;
+		}
+	}
+	#card2.moved {
+		left: 12.5rem;
+	}
+	#card3 {
+		left: 64.5rem;
+		.sliver {
+			background-color: $humana-lightgrey;
+		}
+	}
+	#card3.moved {
+		left: 19.5rem;
+	}
+	#card4 {
+		left: 71.5rem;
+		.sliver {
+			background-color: $humana-green;
+		}
+	}
+	#card4.moved {
+		left: 26.5rem;
+	}
+	#card5 {
+		left: 78.5rem;
+		.sliver {
+			background-color: $humana-grey;
+		}
+	}
+	#card5.moved {
+		left: 33.5rem;
+	}
+	#card6 {
+		left: 85.5rem;
+		.sliver {
+			background-color: $humana-darkgreen;
+		}
+	}
+	#card6.moved {
+		left: 40.5rem;
 	}
 }
 
 .section.content.schedule {
+	background-color: $humana-green;
 	h2 {
-		color: $humana-pink;
+		color: white;
 	}
 	h2.special {
 		color: black;
@@ -274,7 +341,7 @@ h2.special {
 		// background-repeat: no-repeat;
 		width: 50%;
 		margin: 0 auto;
-		border-bottom: 0.125rem solid $humana-green;
+		border-bottom: 0.125rem solid white;
 		span {
 			display: block;
 			padding: 2rem 0;
