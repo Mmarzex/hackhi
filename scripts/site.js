@@ -1,6 +1,6 @@
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > $('#firstsection').offset().top) {
+    if (scrollTop > $('#FAQ').offset().top) {
         $('.section.header').removeClass('off');
     }
     else {
@@ -50,6 +50,21 @@ $(document).ready(function() {
 	$('span.credits').click(function() {
 		$('p.contributors').slideToggle(500);
 	});
+
+    $('.section.header a').click(function () {
+        var href = $(this).attr('href').toString();
+        var top = $(href).offset();
+        $('html, body').animate({
+            scrollTop: (top.top + 5)
+        }, 2000);
+		$('.section.header').removeClass('on');
+    });
+
+    $('#nextsection').click(function() {
+    	$('html, body').animate({
+    		scrollTop: ($('#FAQ').offset().top + 5)
+    	}, 1000);
+    });
 });
 
 function initialize() {

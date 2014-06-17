@@ -169,6 +169,15 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
 .section.hero .area .button {
   margin-top: 1rem;
 }
+.section.hero #nextsection {
+  width: 3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
 
 .section.content {
   background-color: white;
