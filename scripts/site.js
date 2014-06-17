@@ -8,21 +8,6 @@ $(window).scroll(function () {
     }
 });
 
-$('.sandwichbar').click(function() {
-	$('.section.header').addClass('on');
-});
-
-$('span.x').click(function() {
-	$('.section.header').removeClass('on');
-});
-
-$('.card').click(function(){
-    $(this).addClass('flipped').mouseleave(function(){
-        $(this).removeClass('flipped');
-    });
-    return false;
-});
-
 function slideCards(cards) {
 	$.each(cards, function(index, value) {
 		if (value) {
@@ -52,6 +37,18 @@ $(document).ready(function() {
 	})
 	$('#card6').click(function() {
 		slideCards([true, true, true, true, true]);
+	});
+
+	$('.sandwichbar').click(function() {
+		$('.section.header').addClass('on');
+	});
+
+	$('span.x').click(function() {
+		$('.section.header').removeClass('on');
+	});
+
+	$('span.credits').click(function() {
+		$('p.contributors').slideToggle(500);
 	});
 });
 

@@ -167,8 +167,6 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
   margin: 0;
 }
 .section.hero .area .button {
-  font-size: 2.5rem;
-  padding: 0.5rem 4rem;
   margin-top: 1rem;
 }
 
@@ -359,9 +357,44 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
   min-height: 30rem;
 }
 
+.section.rsvp .button:hover {
+  color: black;
+}
+
+.section.footer {
+  padding: 1rem 0;
+  background-color: black;
+  color: white;
+}
+.section.footer p {
+  text-align: center;
+}
+.section.footer span.credits {
+  cursor: pointer;
+}
+.section.footer span.credits:hover {
+  text-decoration: underline;
+}
+.section.footer hr {
+  width: 50%;
+  border-color: #5c9a1b;
+}
+.section.footer p.contributors {
+  font-size: 0.825rem;
+  display: none;
+}
+.section.footer p.contributors a {
+  color: white;
+  text-decoration: none;
+}
+.section.footer p.contributors a:hover {
+  text-decoration: underline;
+}
+
 .button {
   display: inline-block;
-  padding: 0.75rem 1.875rem;
+  font-size: 2.5rem;
+  padding: 0.5rem 4rem;
   border-radius: 0.25rem;
   background-color: #5c9a1b;
   text-transform: uppercase;
