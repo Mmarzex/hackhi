@@ -80,6 +80,7 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
 }
 .section.header .wrapper a {
   text-decoration: none;
+  font-weight: normal;
   color: white;
   display: block;
   font-size: 4rem;
