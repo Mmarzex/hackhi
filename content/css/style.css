@@ -369,6 +369,7 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
 .section.rsvp .button {
   color: black;
   background-color: white;
+  margin: 0 1rem;
 }
 .section.rsvp .button:hover {
   background-color: transparent;
@@ -409,9 +410,20 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
   text-decoration: underline;
 }
 
+a {
+  color: #aa005f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .button {
   display: inline-block;
   font-size: 2.5rem;
+  font-weight: normal;
   padding: 0.5rem 4rem;
   border-radius: 0.25rem;
   background-color: #5c9a1b;
@@ -432,6 +444,7 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
   -o-box-shadow: inset 0 0 0 3px #aa005f;
   box-shadow: inset 0 0 0 3px #aa005f;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .row {
@@ -443,22 +456,23 @@ h2.special, .section.speakers .speakercard .sliver .inner h2 {
   width: 100%;
   min-height: 0.0625rem;
   padding: 5%;
+  text-align: left;
 }
 .row .column img.fit {
   display: inline-block;
   width: 90%;
 }
+.row .column p {
+  text-align: left;
+}
 .row .size-12 {
-  max-width: 95%;
-  text-align: center;
+  max-width: 90%;
 }
 .row .size-6 {
   max-width: 33.333333333333333333333333333333%;
-  text-align: center;
 }
 .row .size-4 {
   max-width: 23.333333333333333333333333333333%;
-  text-align: center;
 }
 
 .row.center div {
