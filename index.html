@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Hack HI!</title>
+	<title>HackHI!</title>
     <!-- <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1.0, user-scalable=no"> -->
 	<link rel="stylesheet" type="text/css" href="content/css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
@@ -160,7 +160,7 @@
 				<div class="column size-4">
 					<h2></h2>
 					<p>
-						
+
 					</p>
 				</div>
 			</div>
@@ -284,12 +284,47 @@
 	<div id="RSVP" class="section content rsvp">
 		<div class="container">
 			<h1>RSVP</h1>
-			<h2 class="special">we gotta know if you're coming</h2>
-			<p>
-				You know, send us an email and stuff. Do you think this link might actually link you to Outlook to RSVP to a specific event? Oh sweet, it can!
-			</p>
+			<h2 class="special">Interns: Register and we will keep you updated.<br>
+			Employees: If you wish to volunteer, register and our lead coordinator will be in touch with you.
+			If you wish to attend, register and we will see you on July 18!</h2>
+			 <input id="internButtonForm"  class="button" type="submit" value="Interns" />
+					<form id="internForm" name="internForm" method="POST" style="display:none;">
+						Name: <input type="text" name="name"><br>
+						Email: <input type="text" name="email"><br>
+						Have you been to a hackathon before?<br>
+						<input type="radio" name="yesorno" value="yes">Sure Have!
+						<input type="radio" name="yesorno" value="no">First Time!<br>
+						<input type="submit" value="Submit">
+					</form>
+
+				<input id="employeeButtonForm"  class="button" type="submit" value="Employees" />
+						<form id="employeeForm" name="employeeForm" method="POST" style="display:none;">
+							Name: <input type="text" name="name"><br>
+							Email: <input type="text" name="email"><br>
+							Would you like to volunteer or attend?<br>
+							<input type="radio" name="yesorno" value="yes">Volunteer
+							<input type="radio" name="yesorno" value="no">Attend<br>
+							<input type="submit" value="Submit">
+						</form>
+
+					    <script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#internButtonForm").click(function() {
+            $("#internForm").show();
+						 e.preventDefault();
+        });
+		$("#employeeButtonForm").click(function() {
+				$("#employeeForm").show();
+				e.preventDefault();
+		});
+});
+</script>
+
+			<!--
 			<a class="button" href="#">Intern</a>
 			<a class="button" href="#">Other</a>
+		-->
 		</div>
 	</div>
 	<div class="section footer">
@@ -301,6 +336,7 @@
 			<p class="contributors">
 				Web Design: <a href="mailto:zachw38@gmail.com">Zach Woodward</a> <br>
 				Copywriting: <a href="#">Ashlee DeLine</a> <br>
+				Lead Coordinator: <a href="mailto:rtucker4@humana.com">Ryan Tucker</a> <br>
 				Planning and Organization: <a href="#">Humana Interns</a>
 			</p>
 			<p>
