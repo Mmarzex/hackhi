@@ -1,0 +1,114 @@
+@import 'compass/css3';
+@import '../bourbon/bourbon';
+
+$font-stack: 'Source Sans Pro', sans-serif;
+$humana-green: #5c9a1b;
+$humana-darkgreen: #1d5b2d;
+$humana-pink: #aa005f;
+$humana-grey: #676767;
+$humana-darkgrey: #484641;
+$humana-lightgrey: #eeeeee;
+
+@media only screen and (min-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.section.hero {
+		.area {
+			width: 90%;
+		}
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.rsvpform {
+		width: 70%;
+		height: 24rem;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.section.header {
+		.wrapper {
+			width: 90%;
+			height: 30rem;
+			a {
+				font-size: 3rem;
+				margin: 2rem;
+			}
+		}
+	}
+
+	.section.hero {
+		.area {
+			img {
+				height: 6rem;
+			}
+		}
+	}
+
+	.button {
+		font-size: 2rem;
+		padding: 0.5rem 2rem;
+	}
+
+	.rsvpform {
+		width: 90%;
+	}
+
+	.row {
+		.size-4 {
+			max-width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.section.header {
+		.wrapper {
+			width: 90%;
+			height: 25rem;
+			a {
+				font-size: 2rem;
+				margin: 2rem;
+			}
+		}
+	}
+
+	.section.hero {
+		.area {
+			height: 50%;
+			img {
+				height: 5rem;
+			}
+		}
+		#nextsection {
+			width: 2rem;
+			bottom: 1rem;
+		}
+	}
+
+	.section.map {
+		min-height: 10rem;
+	}
+
+	.button {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.rsvpform {
+		height: 23rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+}

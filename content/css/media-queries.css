@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1200px) {
+  .section.hero .area {
+    width: 90%;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .rsvpform {
+    width: 70%;
+    height: 24rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section.header .wrapper {
+    width: 90%;
+    height: 30rem;
+  }
+  .section.header .wrapper a {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .section.hero .area img {
+    height: 6rem;
+  }
+
+  .button {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .rsvpform {
+    width: 90%;
+  }
+
+  .row .size-4 {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section.header .wrapper {
+    width: 90%;
+    height: 25rem;
+  }
+  .section.header .wrapper a {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  .section.hero .area {
+    height: 50%;
+  }
+  .section.hero .area img {
+    height: 5rem;
+  }
+  .section.hero #nextsection {
+    width: 2rem;
+    bottom: 1rem;
+  }
+
+  .section.map {
+    min-height: 10rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .rsvpform {
+    height: 23rem;
+  }
+}
