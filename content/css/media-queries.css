@@ -73,3 +73,8 @@
     height: 23rem;
   }
 }
+@media only screen and (max-width: 480px) {
+  .section.hero .area img {
+    height: 4rem;
+  }
+}
