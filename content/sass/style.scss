@@ -55,6 +55,27 @@ h2.special {
 	font-size: 2.5rem;
 }
 
+a {
+	color: $humana-pink;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+span.x {
+	color: white;
+	display: block;
+	position: absolute;
+	top: 5rem;
+	right: 15%;
+	font-size: 2rem;
+	font-weight: 900;
+	cursor: pointer;
+}
+
 .section {
 	padding: 5rem 0;
 	margin: 0;
@@ -84,7 +105,7 @@ h2.special {
 	left: 0;
 	background-color: rgba(0,0,0,0.85);
 	overflow: visible;
-	z-index: 5;
+	z-index: 6;
 	@include transition(top 1s, bottom 1s);
 	.wrapper {
 		top: 0;
@@ -101,16 +122,6 @@ h2.special {
 			display: block;
 			font-size: 4rem;
 			margin: 3rem;
-		}
-		span.x {
-			color: white;
-			display: block;
-			position: absolute;
-			top: 5rem;
-			right: 15%;
-			font-size: 2rem;
-			font-weight: 900;
-			cursor: pointer;
 		}
 	}
 	.section.bottom {
@@ -223,7 +234,10 @@ h2.special {
 	    	text-align: center;
 	    }
 	}
-	padding-bottom: 0;
+	a {
+		color: white;
+	}
+	// padding-bottom: 0;
 }
 
 .section.speakers {
@@ -369,6 +383,11 @@ h2.special {
 	.row:last-child {
 		border-bottom: none;
 	}
+	p {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 900;
+	}
 }
 
 .section.map {
@@ -421,14 +440,173 @@ h2.special {
 	}
 }
 
-a {
-	color: $humana-pink;
-	text-decoration: none;
-	font-weight: bold;
+.rsvpform {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 110%;
+	height: 21rem;
+	width: 45%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.85) 0 0 2rem;
+	text-align: center;
+	@include transition(bottom 0.5s);
+	z-index: 5;
+	h2 {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.button {
+		font-size: 1.25rem;
+		padding: 0.5rem 1rem;
+	}
+	.button:hover {
+		color: black;
+	}
+	input[type="text"] {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+		font-family: $font-stack;
+		width: 40%;
+		border: none;
+		border-bottom: 1px solid black;
+		outline: none;
+		background-color: transparent;
+	}
+	span.x {
+		color: black;
+		top: 1rem;
+		right: 2rem;
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
 }
 
-a:hover {
-	text-decoration: underline;
+.rsvpform.on {
+	bottom: 5rem;
+}
+
+.dontusethisrightnow {
+	// Part I
+	div
+	{
+		clear: both;
+		margin: 0 50px;
+	}
+	input.switch:empty
+	{
+		// margin-left: -999px;
+		opacity: 0;
+	}
+	input.switch:empty ~ label
+	{
+		position: relative;
+		float: left;
+		line-height: 1.6em;
+		text-indent: 4em;
+		margin: 0.2em 0;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	input.switch:empty ~ label:before, 
+	input.switch:empty ~ label:after
+	{
+		position: absolute;
+		display: block;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		content: '\2718';
+		width: 3.6em;
+		text-indent: 2.4em;
+		color: #900;
+		background-color: #c33;
+		border-radius: 0.3em;
+		box-shadow: inset 0 0.2em 0 rgba(0,0,0,0.3);
+	}
+	input.switch:empty ~ label:after
+	{
+		content: ' ';
+		width: 1.4em;
+		top: 0.1em;
+		bottom: 0.1em;
+		text-align: center;
+		text-indent: 0;
+		margin-left: 0.1em;
+		color: #f88;
+		background-color: #fff;
+		border-radius: 0.15em;
+		box-shadow: inset 0 -0.2em 0 rgba(0,0,0,0.2);
+		-webkit-transition: all 100ms ease-in;
+		transition: all 100ms ease-in;
+	}
+	/* toggle on */
+	input.switch:checked ~ label:before
+	{
+		content: '\2714';
+		text-indent: 0.5em;
+		color: #6f6;
+		background-color: #393;
+	}
+	input.switch:checked ~ label:after
+	{
+		margin-left: 2.1em;
+		color: #6c6;
+	}
+	/* focus styles */
+	input.switch:focus ~ label
+	{
+		color: #000;
+	}
+	input.switch:focus ~ label:before
+	{
+		box-shadow: 0 0 0 3px #999;
+	}
+	// Part II
+	.toggle-bg {
+		background-color: #222;
+		display: block;
+		height: 0.5rem;
+		position: relative;
+		width: 1.5rem;
+		margin: 0.5rem auto;
+		input {
+			position: absolute;
+			left: 0;
+			top: -0.5rem;
+			height: 1.75rem;
+			width: 2rem;
+			margin: 0;
+			padding: 0;
+			opacity: 0;
+			z-index: 2;
+			cursor: pointer;
+		}
+		.switch {
+			background-color: black;
+			display: block;
+			float: left;
+			height: 1rem;
+			position: relative;
+			top: -0.25rem;
+			left: 0;
+			width: 0.75rem;
+			z-index: 1;
+		}
+		input:checked ~ .switch {
+			left: 0;
+		}
+		input ~ :checked ~ .switch {
+			left: 0.75rem;
+		}
+		input:checked {
+			z-index: 0;
+		}
+	}
 }
 
 .button {
@@ -505,4 +683,10 @@ a:hover {
 img.h1equiv {
 	height: 10rem;
 	margin: 3rem 0;
+}
+
+.text-input {
+	border: 1px;
+	border-radius:4px;
+	background-color:purple;
 }

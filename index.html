@@ -169,8 +169,12 @@
 	<div id="Speakers" class="section background one">
 		<div class="container">
 			<h1>Speakers &amp; Mentors</h1>
+			<h2><< coming soon >></h2>
+			<p>
+				We're looking for current Humana employees to join HackHI and assist our interns. If you're interested in speaking or mentoring the interns during the event, please <a href="#RSVP">fill out our RSVP form</a>.
+			</p>
 		</div>
-		<div class="section speakers">
+		<!-- <div class="section speakers">
 			<div id="card1" class="speakercard">
 				<div class="sliver">
 					<img class="fit" src="content/images/profile-pic.gif">
@@ -255,27 +259,39 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<div id="Schedule" class="section content schedule">
 		<div class="container">
 			<h1>Schedule</h1>
 			<h2 class="special">when things are happenin'</h2>
-			<p>
+			<!-- <p>
 				Hmm...do I want text here? Something like, "Here's the schedule of events!" You know, short and sweet, bit of a space filler, and gets the point across.
-			</p>
+			</p> -->
 			<h2 style="margin-top: 5rem;">Friday (July 18)</h2>
 			<div class="row">
-				<span class="time">Time</span>
-				<span class="event">Event</span>
+				<span class="time">9:00 A.M.</span>
+				<span class="event">Arrive at Humana and begin registration</span>
 			</div>
 			<div class="row">
-				<span class="time">Time</span>
-				<span class="event">Event</span>
+				<span class="time">10:00 A.M.</span>
+				<span class="event">Hackathon begins!</span>
+			</div>
+			<p>.</p>
+			<p>.</p>
+			<p>.</p>
+			<h2>Saturday (July 19)</h2>
+			<div class="row">
+				<span class="time">10:00 A.M.</span>
+				<span class="event">Hackathon ends! No more hacking!</span>
 			</div>
 			<div class="row">
-				<span class="time">Time</span>
-				<span class="event">Event</span>
+				<span class="time">10:00 A.M.</span>
+				<span class="event">Judging time</span>
+			</div>
+			<div class="row">
+				<span class="time">12:00 P.M.</span>
+				<span class="event">Go home :(</span>
 			</div>
 		</div>
 	</div>
@@ -284,48 +300,65 @@
 	<div id="RSVP" class="section content rsvp">
 		<div class="container">
 			<h1>RSVP</h1>
-			<h2 class="special">Interns: Register and we will keep you updated.<br>
-			Employees: If you wish to volunteer, register and our lead coordinator will be in touch with you.
-			If you wish to attend, register and we will see you on July 18!</h2>
-			 <input id="internButtonForm"  class="button" type="submit" value="Interns" />
-					<form id="internForm" name="internForm" method="POST" style="display:none;">
-						Name: <input type="text" name="name"><br>
-						Email: <input type="text" name="email"><br>
-						Have you been to a hackathon before?<br>
-						<input type="radio" name="yesorno" value="yes">Sure Have!
-						<input type="radio" name="yesorno" value="no">First Time!<br>
-						<input type="submit" value="Submit">
-					</form>
+			<h2 class="special">let us know that you're coming!</h2>
+			<p>
+				We've made two easy little RSVP forms to fill out so you can let us know that you're gonna be there - one if you're going to be attending as an intern, and another if you're attending as any other type of employee here at Humana. Click your respective button below to do something.
+			</p>
+			<input id="internButtonForm"  class="button" type="submit" value="Interns" />
+			<!-- <form id="internForm" name="internForm" method="POST" style="display:none;">
+				Name: <input type="text" name="name"><br>
+				Email: <input type="text" name="email"><br>
+				Have you been to a hackathon before?<br>
+				<input type="radio" name="yesorno" value="yes">Sure Have!
+				<input type="radio" name="yesorno" value="no">First Time!<br>
+				<input type="submit" value="Submit">
+			</form> -->
 
-				<input id="employeeButtonForm"  class="button" type="submit" value="Employees" />
-						<form id="employeeForm" name="employeeForm" method="POST" style="display:none;">
-							Name: <input type="text" name="name"><br>
-							Email: <input type="text" name="email"><br>
-							Would you like to volunteer or attend?<br>
-							<input type="radio" name="yesorno" value="yes">Volunteer
-							<input type="radio" name="yesorno" value="no">Attend<br>
-							<input type="submit" value="Submit">
-						</form>
-
-					    <script type="text/javascript">
-    $(document).ready(function(){
-
-        $("#internButtonForm").click(function() {
-            $("#internForm").show();
-						 e.preventDefault();
-        });
-		$("#employeeButtonForm").click(function() {
-				$("#employeeForm").show();
-				e.preventDefault();
-		});
-});
-</script>
-
-			<!--
-			<a class="button" href="#">Intern</a>
-			<a class="button" href="#">Other</a>
-		-->
+			<input id="employeeButtonForm"  class="button" type="submit" value="Employees" />
+			<!-- <form id="employeeForm" name="employeeForm" method="POST" style="display:none;">
+				Name: <input type="text" name="name"><br>
+				Email: <input type="text" name="email"><br>
+				Would you like to volunteer or attend?<br>
+				<input type="radio" name="yesorno" value="yes">Volunteer
+				<input type="radio" name="yesorno" value="no">Attend<br>
+				<input type="submit" value="Submit">
+			</form> -->
 		</div>
+	</div>
+	<div id="internBox" class="rsvpform">
+		<h2>Interns</h2>
+		<p>
+			Register and we will keep you updated.
+		</p>
+		<form id="internForm" name="internForm" method="POST">
+			Name: <input type="text" name="name" placeholder="First and Last"><br>
+			Email: <input type="text" name="email" placeholder="example@humana.com">
+			<p>
+				Have you been to a hackathon before?<br>
+				<input type="radio" name="yesorno" value="yes">Sure Have!
+				<input type="radio" name="yesorno" value="no">First Time!<br>
+			</p>
+			<input class="button" type="submit" value="Submit">
+		</form>		
+		<span class="x">X</span>
+	</div>
+	<div id="employeeBox" class="rsvpform">
+		<h2>Employees</h2>
+		<p>
+			If you wish to volunteer, register and our lead coordinator will be in touch with you.
+			If you wish to attend, register and we will see you on July 18!
+		</p>
+		<form id="employeeForm" name="employeeForm" method="POST">
+			Name: <input type="text" name="name" placeholder="First and Last"><br>
+			Email: <input type="text" name="email" placeholder="example@humana.com">
+			<p>
+				Would you like to volunteer or attend?<br>
+				<input type="radio" name="yesorno" value="yes">Volunteer
+				<input type="radio" name="yesorno" value="no">Attend<br>
+			</p>
+			<input class="button" type="submit" value="Submit">
+		</form>
+		<span class="x">X</span>
 	</div>
 	<div class="section footer">
 		<div class="container">

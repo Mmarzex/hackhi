@@ -43,7 +43,7 @@ $(document).ready(function() {
 		$('.section.header').addClass('on');
 	});
 
-	$('span.x').click(function() {
+	$('.section.header span.x').click(function() {
 		$('.section.header').removeClass('on');
 	});
 
@@ -64,6 +64,24 @@ $(document).ready(function() {
     	$('html, body').animate({
     		scrollTop: ($('#FAQ').offset().top + 5)
     	}, 1000);
+    });
+
+    $("#internButtonForm").click(function() {
+        $('#internBox').addClass('on');
+		// e.preventDefault();
+    });
+
+    $('#internBox span.x').click(function() {
+    	$('#internBox').removeClass('on');
+    });
+
+	$("#employeeButtonForm").click(function() {
+		$("#employeeBox").addClass('on');
+		// e.preventDefault();
+	});
+
+    $('#employeeBox span.x').click(function() {
+    	$('#employeeBox').removeClass('on');
     });
 });
 
