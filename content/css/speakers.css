@@ -945,3 +945,101 @@
     background-color: white;
   }
 }
+@media only screen and (max-width: 400px) {
+  .section.speakers {
+    height: 20rem;
+  }
+  .section.speakers .speakercard .sliver {
+    width: 2.5rem;
+  }
+  .section.speakers .speakercard .sliver img.fit {
+    width: 4rem;
+    height: 3rem;
+    margin-left: -1rem;
+  }
+  .section.speakers .speakercard .sliver .inner {
+    height: 5rem;
+    width: 30rem;
+    margin-top: 12rem;
+    margin-left: -13rem;
+    padding-right: 2rem;
+  }
+  .section.speakers .speakercard .sliver .inner h2 {
+    width: 20rem;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  .section.speakers .speakercard .body {
+    width: 10rem;
+    top: 2rem;
+    left: 5rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1rem;
+  }
+  .section.speakers .speakercard .body .roles span {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body p {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body li {
+    font-size: 0.825rem;
+  }
+  .section.speakers #card1 {
+    left: 8px;
+  }
+  .section.speakers #card2.moved {
+    left: 48px;
+  }
+  .section.speakers #card3.moved {
+    left: 88px;
+  }
+  .section.speakers #card4.moved {
+    left: 128px;
+  }
+  .section.speakers #card5.moved {
+    left: 168px;
+  }
+  .section.speakers #card6.moved {
+    left: 208px;
+  }
+  .section.speakers #card7.moved {
+    left: 248px;
+  }
+  .section.speakers #card8.moved {
+    left: 48px;
+  }
+  .section.speakers #card2 {
+    left: 48px;
+  }
+  .section.speakers #card3 {
+    left: 88px;
+  }
+  .section.speakers #card4 {
+    left: 128px;
+  }
+  .section.speakers #card5 {
+    left: 168px;
+  }
+  .section.speakers #card6 {
+    left: 208px;
+  }
+  .section.speakers #card7 {
+    left: 248px;
+  }
+  .section.speakers #card8 {
+    left: 288px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 328px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
