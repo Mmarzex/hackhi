@@ -1,0 +1,889 @@
+.section.speakers {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+.section.speakers .speakercard {
+  position: absolute;
+  top: 0;
+  right: -5.5rem;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+  -webkit-transition: left 0.5s ease-out;
+  -moz-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.85) -0.125rem 0 0.375rem;
+}
+.section.speakers .speakercard .sliver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5rem;
+  color: white;
+  background-color: #484641;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+}
+.section.speakers .speakercard .sliver img.fit {
+  width: 7rem;
+  height: 6rem;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(20deg);
+  display: inline-block;
+  margin-left: -1rem;
+}
+.section.speakers .speakercard .sliver .inner {
+  -webkit-transform: skew(20deg) rotate(-70deg);
+  -moz-transform: skew(20deg) rotate(-70deg);
+  -ms-transform: skew(20deg) rotate(-70deg);
+  -o-transform: skew(20deg) rotate(-70deg);
+  transform: skew(20deg) rotate(-70deg);
+  height: 5rem;
+  width: 30rem;
+  margin-top: 12rem;
+  margin-left: -12.5rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+.section.speakers .speakercard .sliver .inner h2 {
+  display: inline-block;
+  width: 20rem;
+  margin-top: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.section.speakers .speakercard .body {
+  position: absolute;
+  top: 2rem;
+  left: 7rem;
+  width: 25rem;
+  color: black;
+}
+.section.speakers .speakercard .body .roles span {
+  display: inline-block;
+  text-align: left;
+}
+.section.speakers .speakercard .body .roles span img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.125rem;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.section.speakers .speakercard .body p {
+  text-align: justify;
+}
+.section.speakers .speakercard.active .sliver {
+  background-color: #5c9a1b;
+}
+
+@media only screen and (min-width: 1600px) {
+  .section.speakers .speakercard .body {
+    width: 20rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 504px;
+  }
+  .section.speakers #card3 {
+    left: 584px;
+  }
+  .section.speakers #card4 {
+    left: 664px;
+  }
+  .section.speakers #card5 {
+    left: 744px;
+  }
+  .section.speakers #card6 {
+    left: 824px;
+  }
+  .section.speakers #card7 {
+    left: 904px;
+  }
+  .section.speakers #card8 {
+    left: 984px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1064px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .section.speakers .speakercard .body {
+    width: 40rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 824px;
+  }
+  .section.speakers #card3 {
+    left: 904px;
+  }
+  .section.speakers #card4 {
+    left: 984px;
+  }
+  .section.speakers #card5 {
+    left: 1064px;
+  }
+  .section.speakers #card6 {
+    left: 1144px;
+  }
+  .section.speakers #card7 {
+    left: 1224px;
+  }
+  .section.speakers #card8 {
+    left: 1304px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1384px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .section.speakers .speakercard .body {
+    width: 35rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 744px;
+  }
+  .section.speakers #card3 {
+    left: 824px;
+  }
+  .section.speakers #card4 {
+    left: 904px;
+  }
+  .section.speakers #card5 {
+    left: 984px;
+  }
+  .section.speakers #card6 {
+    left: 1064px;
+  }
+  .section.speakers #card7 {
+    left: 1144px;
+  }
+  .section.speakers #card8 {
+    left: 1224px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1304px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .section.speakers .speakercard .body {
+    width: 30rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 664px;
+  }
+  .section.speakers #card3 {
+    left: 744px;
+  }
+  .section.speakers #card4 {
+    left: 824px;
+  }
+  .section.speakers #card5 {
+    left: 904px;
+  }
+  .section.speakers #card6 {
+    left: 984px;
+  }
+  .section.speakers #card7 {
+    left: 1064px;
+  }
+  .section.speakers #card8 {
+    left: 1144px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1224px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .section.speakers .speakercard .body {
+    width: 25rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 584px;
+  }
+  .section.speakers #card3 {
+    left: 664px;
+  }
+  .section.speakers #card4 {
+    left: 744px;
+  }
+  .section.speakers #card5 {
+    left: 824px;
+  }
+  .section.speakers #card6 {
+    left: 904px;
+  }
+  .section.speakers #card7 {
+    left: 984px;
+  }
+  .section.speakers #card8 {
+    left: 1064px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1144px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section.speakers .speakercard .body {
+    width: 20rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 504px;
+  }
+  .section.speakers #card3 {
+    left: 584px;
+  }
+  .section.speakers #card4 {
+    left: 664px;
+  }
+  .section.speakers #card5 {
+    left: 744px;
+  }
+  .section.speakers #card6 {
+    left: 824px;
+  }
+  .section.speakers #card7 {
+    left: 904px;
+  }
+  .section.speakers #card8 {
+    left: 984px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 1064px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .section.speakers .speakercard .body {
+    width: 15rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1.5rem;
+  }
+  .section.speakers .speakercard .body .roles span img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .section.speakers .speakercard .body p {
+    text-align: left;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 424px;
+  }
+  .section.speakers #card3 {
+    left: 504px;
+  }
+  .section.speakers #card4 {
+    left: 584px;
+  }
+  .section.speakers #card5 {
+    left: 664px;
+  }
+  .section.speakers #card6 {
+    left: 744px;
+  }
+  .section.speakers #card7 {
+    left: 824px;
+  }
+  .section.speakers #card8 {
+    left: 904px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 984px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .section.speakers .speakercard .body {
+    width: 10rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1.25rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 120px;
+  }
+  .section.speakers #card3.moved {
+    left: 200px;
+  }
+  .section.speakers #card4.moved {
+    left: 280px;
+  }
+  .section.speakers #card5.moved {
+    left: 360px;
+  }
+  .section.speakers #card6.moved {
+    left: 440px;
+  }
+  .section.speakers #card7.moved {
+    left: 520px;
+  }
+  .section.speakers #card8.moved {
+    left: 600px;
+  }
+  .section.speakers #card2 {
+    left: 344px;
+  }
+  .section.speakers #card3 {
+    left: 424px;
+  }
+  .section.speakers #card4 {
+    left: 504px;
+  }
+  .section.speakers #card5 {
+    left: 584px;
+  }
+  .section.speakers #card6 {
+    left: 664px;
+  }
+  .section.speakers #card7 {
+    left: 744px;
+  }
+  .section.speakers #card8 {
+    left: 824px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 904px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section.speakers .speakercard .sliver {
+    width: 4rem;
+  }
+  .section.speakers .speakercard .sliver img.fit {
+    width: 6rem;
+    height: 5rem;
+    margin-left: -1rem;
+  }
+  .section.speakers .speakercard .sliver .inner {
+    height: 5rem;
+    width: 30rem;
+    margin-top: 12rem;
+    margin-left: -12.5rem;
+    padding-right: 2rem;
+  }
+  .section.speakers .speakercard .sliver .inner h2 {
+    width: 20rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  .section.speakers .speakercard .body {
+    width: 10rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1.25rem;
+  }
+  .section.speakers .speakercard .body {
+    width: 10rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1.25rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 104px;
+  }
+  .section.speakers #card3.moved {
+    left: 168px;
+  }
+  .section.speakers #card4.moved {
+    left: 232px;
+  }
+  .section.speakers #card5.moved {
+    left: 296px;
+  }
+  .section.speakers #card6.moved {
+    left: 360px;
+  }
+  .section.speakers #card7.moved {
+    left: 424px;
+  }
+  .section.speakers #card8.moved {
+    left: 488px;
+  }
+  .section.speakers #card2 {
+    left: 344px;
+  }
+  .section.speakers #card3 {
+    left: 408px;
+  }
+  .section.speakers #card4 {
+    left: 472px;
+  }
+  .section.speakers #card5 {
+    left: 536px;
+  }
+  .section.speakers #card6 {
+    left: 600px;
+  }
+  .section.speakers #card7 {
+    left: 664px;
+  }
+  .section.speakers #card8 {
+    left: 728px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 792px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section.speakers {
+    height: 20rem;
+  }
+  .section.speakers .speakercard .sliver {
+    width: 3rem;
+  }
+  .section.speakers .speakercard .sliver img.fit {
+    width: 5rem;
+    height: 4rem;
+    margin-left: -1rem;
+  }
+  .section.speakers .speakercard .sliver .inner {
+    height: 5rem;
+    width: 30rem;
+    margin-top: 12rem;
+    margin-left: -12.75rem;
+    padding-right: 2rem;
+  }
+  .section.speakers .speakercard .sliver .inner h2 {
+    width: 20rem;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  .section.speakers .speakercard .body {
+    width: 10rem;
+    top: 2rem;
+    left: 5rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1rem;
+  }
+  .section.speakers .speakercard .body .roles span {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body p {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body li {
+    font-size: 0.825rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 88px;
+  }
+  .section.speakers #card3.moved {
+    left: 136px;
+  }
+  .section.speakers #card4.moved {
+    left: 184px;
+  }
+  .section.speakers #card5.moved {
+    left: 232px;
+  }
+  .section.speakers #card6.moved {
+    left: 280px;
+  }
+  .section.speakers #card7.moved {
+    left: 328px;
+  }
+  .section.speakers #card8.moved {
+    left: 376px;
+  }
+  .section.speakers #card2 {
+    left: 312px;
+  }
+  .section.speakers #card3 {
+    left: 360px;
+  }
+  .section.speakers #card4 {
+    left: 408px;
+  }
+  .section.speakers #card5 {
+    left: 456px;
+  }
+  .section.speakers #card6 {
+    left: 504px;
+  }
+  .section.speakers #card7 {
+    left: 552px;
+  }
+  .section.speakers #card8 {
+    left: 600px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 648px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section.speakers {
+    height: 20rem;
+  }
+  .section.speakers .speakercard .sliver {
+    width: 3rem;
+  }
+  .section.speakers .speakercard .sliver img.fit {
+    width: 5rem;
+    height: 4rem;
+    margin-left: -1rem;
+  }
+  .section.speakers .speakercard .sliver .inner {
+    height: 5rem;
+    width: 30rem;
+    margin-top: 12rem;
+    margin-left: -12.75rem;
+    padding-right: 2rem;
+  }
+  .section.speakers .speakercard .sliver .inner h2 {
+    width: 20rem;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  .section.speakers .speakercard .body {
+    width: 10rem;
+    top: 2rem;
+    left: 5rem;
+  }
+  .section.speakers .speakercard .body h2 {
+    font-size: 1rem;
+  }
+  .section.speakers .speakercard .body .roles span {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body p {
+    font-size: 0.825rem;
+  }
+  .section.speakers .speakercard .body li {
+    font-size: 0.825rem;
+  }
+  .section.speakers #card1 {
+    left: 40px;
+  }
+  .section.speakers #card2.moved {
+    left: 88px;
+  }
+  .section.speakers #card3.moved {
+    left: 136px;
+  }
+  .section.speakers #card4.moved {
+    left: 184px;
+  }
+  .section.speakers #card5.moved {
+    left: 232px;
+  }
+  .section.speakers #card6.moved {
+    left: 280px;
+  }
+  .section.speakers #card7.moved {
+    left: 328px;
+  }
+  .section.speakers #card8.moved {
+    left: 88px;
+  }
+  .section.speakers #card2 {
+    left: 88px;
+  }
+  .section.speakers #card3 {
+    left: 136px;
+  }
+  .section.speakers #card4 {
+    left: 184px;
+  }
+  .section.speakers #card5 {
+    left: 232px;
+  }
+  .section.speakers #card6 {
+    left: 280px;
+  }
+  .section.speakers #card7 {
+    left: 328px;
+  }
+  .section.speakers #card8 {
+    left: 376px;
+  }
+  .section.speakers #card8 .sliver img.fit {
+    opacity: 0;
+  }
+  .section.speakers #backcard {
+    left: 424px;
+    box-shadow: none;
+  }
+  .section.speakers #backcard .sliver {
+    cursor: default;
+    background-color: white;
+  }
+}
