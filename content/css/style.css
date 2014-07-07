@@ -257,13 +257,18 @@ span.x {
   left: 0;
   bottom: 0;
   width: 5rem;
-  color: black;
+  color: white;
+  background-color: #484641;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
   text-align: left;
   cursor: pointer;
   overflow: hidden;
 }
 .section.speakers .speakercard .sliver img.fit {
   width: 7rem;
+  height: 6rem;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -ms-transform: skew(20deg);
@@ -297,99 +302,93 @@ span.x {
   width: 25rem;
   color: black;
 }
+.section.speakers .speakercard .body .roles span {
+  text-align: left;
+}
+.section.speakers .speakercard .body .roles span img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.125rem;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  vertical-align: middle;
+}
 .section.speakers .speakercard .body p {
   text-align: justify;
 }
-.section.speakers #card1 {
-  left: 72px;
+.section.speakers .speakercard.active .sliver {
+  background-color: #5c9a1b;
 }
-.section.speakers #card1 .sliver {
-  background-color: #676767;
+.section.speakers #card1 {
+  left: 40px;
 }
 .section.speakers #card2.moved {
-  left: 152px;
+  left: 120px;
 }
 .section.speakers #card3.moved {
-  left: 232px;
+  left: 200px;
 }
 .section.speakers #card4.moved {
-  left: 312px;
+  left: 280px;
 }
 .section.speakers #card5.moved {
-  left: 392px;
+  left: 360px;
 }
 .section.speakers #card6.moved {
-  left: 472px;
+  left: 440px;
 }
 .section.speakers #card7.moved {
-  left: 552px;
+  left: 520px;
 }
 .section.speakers #card8.moved {
-  left: 632px;
+  left: 600px;
 }
 .section.speakers #card9.moved {
-  left: 712px;
+  left: 680px;
 }
 .section.speakers #card10.moved {
-  left: 792px;
+  left: 760px;
 }
 .section.speakers #card11.moved {
-  left: 872px;
+  left: 840px;
 }
 .section.speakers #card12.moved {
-  left: 952px;
+  left: 920px;
 }
 .section.speakers #card2 {
-  left: 616px;
-}
-.section.speakers #card2 .sliver {
-  background-color: #1d5b2d;
+  left: 584px;
 }
 .section.speakers #card3 {
-  left: 696px;
-}
-.section.speakers #card3 .sliver {
-  background-color: #eeeeee;
+  left: 664px;
 }
 .section.speakers #card4 {
-  left: 776px;
-}
-.section.speakers #card4 .sliver {
-  background-color: #5c9a1b;
+  left: 744px;
 }
 .section.speakers #card5 {
-  left: 856px;
-}
-.section.speakers #card5 .sliver {
-  background-color: #676767;
+  left: 824px;
 }
 .section.speakers #card6 {
-  left: 936px;
-}
-.section.speakers #card6 .sliver {
-  background-color: #1d5b2d;
+  left: 904px;
 }
 .section.speakers #card7 {
-  left: 1016px;
-}
-.section.speakers #card7 .sliver {
-  background-color: #eeeeee;
+  left: 984px;
 }
 .section.speakers #card8 {
-  left: 1096px;
-}
-.section.speakers #card8 .sliver {
-  background-color: #5c9a1b;
+  left: 1064px;
 }
 .section.speakers #card8 .sliver img.fit {
   opacity: 0;
 }
 .section.speakers #backcard {
-  left: 1176px;
+  left: 1144px;
   box-shadow: none;
 }
 .section.speakers #backcard .sliver {
   cursor: default;
+  background-color: white;
 }
 
 .section.content.schedule h2 {

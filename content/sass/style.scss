@@ -242,7 +242,7 @@ span.x {
 	padding-bottom: 0;
 }
 
-$start: (16px * 4.5);
+$start: (16px * 2.5);
 $multiplier: (16px * 34);
 $plusSliver: (16px * 5);
 
@@ -267,12 +267,15 @@ $plusSliver: (16px * 5);
 			left: 0;
 			bottom: 0;
 			width: 5rem;
-			color: black;
+			color: white;
+			background-color: $humana-darkgrey;
+			@include transition(background-color 0.25s ease-out);
 			text-align: left;
 			cursor: pointer;
 			overflow: hidden;
 			img.fit {
 				width: 7rem;
+				height: 6rem;
 				@include transform(skew(20deg));
 				display: inline-block;
 				margin-left: -1rem;
@@ -300,16 +303,35 @@ $plusSliver: (16px * 5);
 			// bottom: 2rem;
 			width: 25rem;
 			color: black;
+			.roles {
+				span {
+					// display: block;
+					text-align: left;
+					img {
+						display: inline-block;
+						width: 1.5rem;
+						height: 1.5rem;
+						padding: 0.5rem;
+						margin: 0.125rem;
+						margin-right: 0.5rem;
+						border: 2px solid black;
+						border-radius: 50%;
+						vertical-align: middle;
+					}
+				}
+			}
 			p {
 				text-align: justify;
 			}
 		}
 	}
+	.speakercard.active {
+		.sliver {
+			background-color: $humana-green;
+		}
+	}
 	#card1 {
 		left: $start;
-		.sliver {
-			background-color: $humana-grey;
-		}
 	}
 	#card2.moved {
 		left: ($start + ($plusSliver * 1));
@@ -346,44 +368,25 @@ $plusSliver: (16px * 5);
 	}
 	#card2 {
 		left: ($start + ($multiplier + ($plusSliver * 0)));
-		.sliver {
-			background-color: $humana-darkgreen;
-		}
 	}
 	#card3 {
 		left: ($start + ($multiplier + ($plusSliver * 1)));
-		.sliver {
-			background-color: $humana-lightgrey;
-		}
 	}
 	#card4 {
 		left: ($start + ($multiplier + ($plusSliver * 2)));
-		.sliver {
-			background-color: $humana-green;
-		}
 	}
 	#card5 {
 		left: ($start + ($multiplier + ($plusSliver * 3)));
-		.sliver {
-			background-color: $humana-grey;
-		}
 	}
 	#card6 {
 		left: ($start + ($multiplier + ($plusSliver * 4)));
-		.sliver {
-			background-color: $humana-darkgreen;
-		}
 	}
 	#card7 {
 		left: ($start + ($multiplier + ($plusSliver * 5)));
-		.sliver {
-			background-color: $humana-lightgrey;
-		}
 	}
 	#card8 {
 		left: ($start + ($multiplier + ($plusSliver * 6)));
 		.sliver {
-			background-color: $humana-green;
 			img.fit {
 				opacity: 0;
 			}
@@ -419,6 +422,7 @@ $plusSliver: (16px * 5);
 		// background-color: black;
 		.sliver {
 			cursor: default;
+			background-color: white;
 		}
 	}
 }
