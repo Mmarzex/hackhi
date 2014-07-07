@@ -21,22 +21,40 @@ function slideCards(cards) {
 
 $(document).ready(function() {
 	$('#card1').click(function() {
-		slideCards([false, false, false, false, false]);
+		slideCards([false, false, false, false, false, false, false, false, false, false, false]);
 	})
 	$('#card2').click(function() {
-		slideCards([true, false, false, false, false]);
+		slideCards([true, false, false, false, false, false, false, false, false, false, false]);
 	})
 	$('#card3').click(function() {
-		slideCards([true, true, false, false, false]);
+		slideCards([true, true, false, false, false, false, false, false, false, false, false]);
 	})
 	$('#card4').click(function() {
-		slideCards([true, true, true, false, false]);
+		slideCards([true, true, true, false, false, false, false, false, false, false, false]);
 	})
 	$('#card5').click(function() {
-		slideCards([true, true, true, true, false]);
+		slideCards([true, true, true, true, false, false, false, false, false, false, false]);
 	})
 	$('#card6').click(function() {
-		slideCards([true, true, true, true, true]);
+		slideCards([true, true, true, true, true, false, false, false, false, false, false]);
+	})
+	$('#card7').click(function() {
+		slideCards([true, true, true, true, true, true, false, false, false, false, false]);
+	})
+	$('#card8').click(function() {
+		slideCards([true, true, true, true, true, true, true, false, false, false, false]);
+	})
+	$('#card9').click(function() {
+		slideCards([true, true, true, true, true, true, true, true, false, false, false]);
+	})
+	$('#card10').click(function() {
+		slideCards([true, true, true, true, true, true, true, true, true, false, false]);
+	})
+	$('#card11').click(function() {
+		slideCards([true, true, true, true, true, true, true, true, true, true, false]);
+	})
+	$('#card12').click(function() {
+		slideCards([true, true, true, true, true, true, true, true, true, true, true]);
 	});
 
 	$('.sandwichbar').click(function() {
