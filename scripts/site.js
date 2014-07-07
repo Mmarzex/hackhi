@@ -8,7 +8,7 @@ $(window).scroll(function () {
     }
 });
 
-function slideCards(cards) {
+function slideCards(cards, active) {
 	$.each(cards, function(index, value) {
 		if (value) {
 			$('#card' + (index + 2)).addClass('moved');
@@ -16,28 +16,52 @@ function slideCards(cards) {
 		else {
 			$('#card' + (index + 2)).removeClass('moved');
 		}
+		if ((index + 1) == active) {
+			$('#card' + (index + 1)).addClass('active');
+		}
+		else {
+			$('#card' + (index + 1)).removeClass('active');
+		}
 	});
 };
 
 $(document).ready(function() {
 	$('#card1').click(function() {
-		slideCards([false, false, false, false, false]);
+		slideCards([false, false, false, false, false, false, false, false, false, false, false], 1);
 	})
 	$('#card2').click(function() {
-		slideCards([true, false, false, false, false]);
+		slideCards([true, false, false, false, false, false, false, false, false, false, false], 2);
 	})
 	$('#card3').click(function() {
-		slideCards([true, true, false, false, false]);
+		slideCards([true, true, false, false, false, false, false, false, false, false, false], 3);
 	})
 	$('#card4').click(function() {
-		slideCards([true, true, true, false, false]);
+		slideCards([true, true, true, false, false, false, false, false, false, false, false], 4);
 	})
 	$('#card5').click(function() {
-		slideCards([true, true, true, true, false]);
+		slideCards([true, true, true, true, false, false, false, false, false, false, false], 5);
 	})
 	$('#card6').click(function() {
-		slideCards([true, true, true, true, true]);
+		slideCards([true, true, true, true, true, false, false, false, false, false, false], 6);
+	})
+	$('#card7').click(function() {
+		slideCards([true, true, true, true, true, true, false, false, false, false, false], 7);
+	})
+	$('#card8').click(function() {
+		slideCards([true, true, true, true, true, true, true, false, false, false, false], 8);
 	});
+	// $('#card9').click(function() {
+	// 	slideCards([true, true, true, true, true, true, true, true, false, false, false]);
+	// })
+	// $('#card10').click(function() {
+	// 	slideCards([true, true, true, true, true, true, true, true, true, false, false]);
+	// })
+	// $('#card11').click(function() {
+	// 	slideCards([true, true, true, true, true, true, true, true, true, true, false]);
+	// })
+	// $('#card12').click(function() {
+	// 	slideCards([true, true, true, true, true, true, true, true, true, true, true]);
+	// });
 
 	$('.sandwichbar').click(function() {
 		$('.section.header').addClass('on');
