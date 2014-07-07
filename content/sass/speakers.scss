@@ -1019,3 +1019,71 @@ $plusSliver: (16px * 5);
 		}
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	$start: (16px * 0.5);
+	$multiplier: (16px * 17);
+	$plusSliver: (16px * 3);
+
+	.section.speakers {
+		#card1 {
+			left: $start;
+		}
+		#card2.moved {
+			left: ($start + ($plusSliver * 1));
+		}
+		#card3.moved {
+			left: ($start + ($plusSliver * 2));
+		}
+		#card4.moved {
+			left: ($start + ($plusSliver * 3));
+		}
+		#card5.moved {
+			left: ($start + ($plusSliver * 4));
+		}
+		#card6.moved {
+			left: ($start + ($plusSliver * 5));
+		}
+		#card7.moved {
+			left: ($start + ($plusSliver * 6));
+		}
+		#card8.moved {
+			left: ($start + ($plusSliver * 1));
+		}
+		#card2 {
+			left: ($start + ($plusSliver * 1));
+		}
+		#card3 {
+			left: ($start + ($plusSliver * 2));
+		}
+		#card4 {
+			left: ($start + ($plusSliver * 3));
+		}
+		#card5 {
+			left: ($start + ($plusSliver * 4));
+		}
+		#card6 {
+			left: ($start + ($plusSliver * 5));
+		}
+		#card7 {
+			left: ($start + ($plusSliver * 6));
+		}
+		#card8 {
+			left: ($start + ($plusSliver * 7));
+			.sliver {
+				img.fit {
+					opacity: 0;
+				}
+			}
+		}
+		#backcard {
+			left: ($start + ($plusSliver * 8));
+			box-shadow: none;
+			// background-color: black;
+			.sliver {
+				cursor: default;
+				background-color: white;
+			}
+		}
+	}
+}
