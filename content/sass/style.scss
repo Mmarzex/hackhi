@@ -249,35 +249,54 @@ span.x {
 	h2.special {
 		color: black;
 	}
-	.row {
-		padding: 2rem 3rem;
-		// background-image: url('../images/black-dot.png');
-		// background-size: 0.25rem 0.25rem;
-		// background-position: 50% 100%;
-		// background-repeat: no-repeat;
+	.column {
 		width: 50%;
-		margin: 0 auto;
-		border-bottom: 0.125rem solid $humana-green;
-		span {
-			display: block;
+		position: relative;
+		float: left;
+		overflow: visible;
+		.row {
 			padding: 2rem 0;
-			font-size: 1.5rem;
+			// background-image: url('../images/black-dot.png');
+			// background-size: 0.25rem 0.25rem;
+			// background-position: 50% 100%;
+			// background-repeat: no-repeat;
+			width: 100%;
+			border-bottom: 0.125rem solid $humana-green;
+			border-right: 0.25rem solid $humana-green;
+			span {
+				display: block;
+				padding: 2rem 0;
+				font-size: 1.5rem;
+			}
+			span.time {
+				font-weight: bold;
+				padding-bottom: 1rem;
+			}
+			span.event {
+				padding-top: 1rem;
+			}
 		}
-		span.time {
-			font-weight: bold;
-			padding-bottom: 1rem;
+		.row:last-child {
+			border-bottom: none;
 		}
-		span.event {
-			padding-top: 1rem;
+		p {
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 900;
 		}
 	}
-	.row:last-child {
-		border-bottom: none;
+	#firstcolumn {
+		background-size: auto 2rem;
+		background-position: -1rem 1rem;
+		background-repeat: no-repeat;
 	}
-	p {
-		text-align: center;
-		font-size: 2rem;
-		font-weight: 900;
+	img {
+		height: 1.5rem;
+		position: absolute;
+		top: 23.5rem;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
 	}
 }
 

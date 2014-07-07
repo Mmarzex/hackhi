@@ -54,6 +54,18 @@ $humana-lightgrey: #eeeeee;
 		}
 	}
 
+	.section.content.schedule {
+		.column {
+			width: 100%;
+			.row {
+				border-right: none;
+			}
+		}
+		img {
+			display: none;
+		}
+	}
+
 	.button {
 		font-size: 2rem;
 		padding: 0.5rem 2rem;

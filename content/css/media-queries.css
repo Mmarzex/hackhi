@@ -26,6 +26,16 @@
     height: 6rem;
   }
 
+  .section.content.schedule .column {
+    width: 100%;
+  }
+  .section.content.schedule .column .row {
+    border-right: none;
+  }
+  .section.content.schedule img {
+    display: none;
+  }
+
   .button {
     font-size: 2rem;
     padding: 0.5rem 2rem;
