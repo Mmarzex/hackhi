@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="content/css/style.css">
 	<link rel="stylesheet" type="text/css" href="content/css/media-queries.css">
-	<link rel="stylesheet" type="text/css" href="content/css/speakers.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -176,7 +175,7 @@
 <<<<<<< HEAD
 				We're looking for current Humana associates to join HackHI and assist our interns. If you're interested in speaking or mentoring the interns during the event, please <a href="#RSVP">fill out our RSVP form</a>.
 =======
-				We're still looking for current Humana associates to join HackHI and assist our interns. If you're interested in speaking or mentoring the interns during the event, please <a href="#RSVP">fill out our RSVP form</a>.
+				We're still looking for current Humana employees to join HackHI and assist our interns. If you're interested in speaking or mentoring the interns during the event, please <a href="#RSVP">fill out our RSVP form</a>.
 >>>>>>> 141c88a5bb56c5ca4d23f9bf894bcf44bdeaf2ad
 			</p>
 		</div>
@@ -196,7 +195,7 @@
 						<span><img src="content/images/glyphicon-overnight.png">Overnight</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -214,7 +213,7 @@
 						<span><img src="content/images/glyphicon-overnight.png">Overnight</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -232,7 +231,7 @@
 						<span><img src="content/images/glyphicon-speaker.png">Speaker</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -250,7 +249,7 @@
 						<span><img src="content/images/glyphicon-speaker.png">Speaker</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -268,7 +267,7 @@
 						<span><img src="content/images/glyphicon-speaker.png">Speaker</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -286,7 +285,7 @@
 						<span><img src="content/images/glyphicon-overnight.png">Overnight</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
@@ -303,7 +302,7 @@
 						<span><img src="content/images/glyphicon-mentor.png">Mentor</span>
 					</div>
 					<p>
-
+						
 					</p>
 				</div>
 			</div>
