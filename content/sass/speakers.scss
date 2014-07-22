@@ -88,6 +88,21 @@ $plusSliver: (16px * 5);
 			p {
 				text-align: justify;
 			}
+			ul {
+				li {
+					img {
+						display: inline-block;
+						width: 1rem;
+						height: 1rem;
+						padding: 0.25rem;
+						margin: 0.125rem;
+						margin-right: 0.5rem;
+						border: 2px solid black;
+						border-radius: 50%;
+						vertical-align: middle;
+					}
+				}
+			}
 		}
 	}
 	.speakercard.active {

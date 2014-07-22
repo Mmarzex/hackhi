@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HackHI!</title>
+    <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../content/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../content/css/media-queries.css">
+	<link rel="stylesheet" type="text/css" href="../content/css/speakers.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- <script type="text/javascript" src="../scripts/site.js"></script> -->
+</head>
+<body>
+	<div class="section quickheader">
+		<div class="container">
+			<div class="float-left">
+				<a href="#Home"><img class="logo" src="../content/images/logo.png"></a>
+			</div>
+			<div class="float-right">
+				<img class="sandwichbar" src="../content/images/sandwich-bar.png">
+			</div>
+		</div>
+	</div>
+	<div class="section hero smaller">
+		<div class="container">
+			<div class="area">
+				<img src="../content/images/logo-white.png">
+				<h2>Humana Intern Hackathon</h2>
+			</div>
+		</div>
+	</div>
+	<div class="section content">
+		<div class="container">
+			<h1>Final Projects</h1>
+			<p>
+				I was thinking we could put something here kind of summarizing what went into these projects, how they were judged, and other stuff along those lines. Kind of talk up what the page is about to show. I'm even cool with putting a full-width section below here as a slideshow or something of general project-related pictures. In general though, we can always just take this section out, but I like having intro sections to pages.
+			</p>
+		</div>
+	</div>
+	<div class="section website humtogether">
+		<div class="arrow left"></div>
+		<div class="arrow right"></div>
+	</div>
+	<div class="section description">
+		<div class="container">
+			<h1>Busta Grill</h1>
+			<a class="weblink" href="http://www.frostace.net/">frostace.net</a>
+			<p>
+				Team Busta Grill had the vision to create a social media web application that would allow Humana associates and members to tumble silos. With this vision, we created HumTogether. The main function of the application is to allow users to create, view and join events (coffee runs, lunch at Spaghetti Factory, a walk to Big Four Bridge, etc.). The main goal of the application was to encourage Humana associates (and eventually members) to branch out - beyond their typical routine - with networking based on common needs.
+			</p>
+			<div class="video-container">
+                <a class="circ-btn"><img src="../content/images/playbtn.png"></a>
+                <img id="youtube" src="../content/images/placeholder.jpg" data-video="http://www.youtube.com/embed/X5TvP3dhPTo" class="youtube">
+            </div>
+		</div>
+	</div>
+	<div class="section website arcadeworld">
+		<div class="arrow left"></div>
+		<div class="arrow right"></div>
+	</div>
+	<div class="section description">
+		<div class="container">
+			<h1>Arcade World</h1>
+			<a class="weblink" href="http://lilweirdward.github.io/arcade-world/">lilweirdward.github.io/arcade-world/</a>
+			<p>
+				Arcade World is a collection of mini-greens designed to enhance the player's knowledge of culture. The player can "travel" to twelve different countries, and in each country play an education mini-game to learn about some aspect of the culture in that country. Our intent is that it be played for Wow points to encourage Humana associates to think in a more globally-minded manner.
+			</p>
+			<div class="video-container">
+                <a class="circ-btn"><img src="../content/images/playbtn.png"></a>
+                <img id="youtube" src="../content/images/placeholder.jpg" data-video="http://www.youtube.com/embed/X5TvP3dhPTo" class="youtube">
+            </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var humtogether = ['../content/images/HumTogether.png', '../content/images/HumTogether-2.png'];
+		var HTCounter = 0;
+		var arcadeworld = ['../content/images/ArcadeWorld.png', '../content/images/ArcadeWorld-2.png'];
+		var AWCounter = 0;
+
+		function newBackground(array, name, counter) {
+			if ($('.section.website.' + name + ' > .arrow').hasClass('right')) {
+				if (counter >= (array.length - 1)) {
+					counter = 0;
+					$('.section.website.' + name).css('background-image', 'url(' + array[counter] + ')');
+				}
+				else {
+					counter++;
+					$('.section.website.' + name).css('background-image', 'url(' + array[counter] + ')');
+				}
+			}
+			else if ($('.section.website.' + name + ' > .arrow').hasClass('left')) {
+				if (counter <= 0) {
+					counter = 1;
+					$('.section.website.' + name).css('background-image', 'url(' + array[counter] + ')');
+				}
+				else {
+					counter--;
+					$('.section.website.' + name).css('background-image', 'url(' + array[counter] + ')');
+				}
+			}
+			return counter;
+		}
+		$('.section.website.humtogether > .arrow').click(function() {
+			HTCounter = newBackground(humtogether, 'humtogether', HTCounter);
+		});
+		$('.section.website.arcadeworld > .arrow').click(function() {
+			AWCounter = newBackground(arcadeworld, 'arcadeworld', AWCounter);
+		});
+
+		$('.video-container').click(function () {
+	        var video = '<object data="' + $('img#youtube').attr('data-video') + '" class="youtube"></object>';
+	        $(this).replaceWith(video);
+	    });
+	</script>
+</body>
+</html>

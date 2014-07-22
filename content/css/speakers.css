@@ -96,6 +96,17 @@
 .section.speakers .speakercard .body p {
   text-align: justify;
 }
+.section.speakers .speakercard .body ul li img {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.25rem;
+  margin: 0.125rem;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  vertical-align: middle;
+}
 .section.speakers .speakercard.active .sliver {
   background-color: #5c9a1b;
 }
